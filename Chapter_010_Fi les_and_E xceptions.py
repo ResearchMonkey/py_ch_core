@@ -35,11 +35,48 @@ my_dir = os.getcwd()
 # print(pi_string)
 # print(len(pi_string))
 
-filename = '{}/python_crash_course_files/chapter_10/programming.txt'.format(my_dir)
+# filename = '{}/python_crash_course_files/chapter_10/programming.txt'.format(my_dir)
+#
+# with open(filename, 'w') as file_object:
+#     file_object.write('I love Programming, well love is a strong word. \n')
+#     file_object.write('I love creating new games.')
+#
+# with open(filename, 'a') as file_object:
+#     file_object.write("\nTHis is a new line")
 
-with open(filename, 'w') as file_object:
-    file_object.write('I love Programming, well love is a strong word. \n')
-    file_object.write('I love creating new games.')
+"""Exceptions page 200"""
 
-with open(filename, 'a') as file_object:
-    file_object.write("\nTHis is a new line")
+# print(5/0)
+
+# try:
+#     print(5/0)
+# except ZeroDivisionError:
+#     print("You can't divide by zero!")
+
+# print("Give me two numbers, and I'll divide them.")
+# print("Enter 'q' to quit.")
+#
+# while True:
+#     first_number = input("\nFirst number: ")
+#     if first_number == 'q':
+#         break
+#     second_number = input("Second number: ")
+#     try:
+#         answer = int(first_number) / int(second_number)
+#     except ZeroDivisionError:
+#         print("You can't divide by zero!")
+#     else:
+#         print(answer)
+
+filename = '{}/python_crash_course_files/chapter_10/alice.txt'.format(my_dir)
+
+try:
+    with open(filename, encoding='utf-8') as f_obj:
+        contents = f_obj.read()
+except FileNotFoundError:
+    print(f'Sorry, the file {filename} does not exist.')
+else:
+    # Count the approximate number of words in the file.
+    words = contents.split()
+    num_words = len(words)
+    print(' The file {} has about {} words'.format(filename, str(num_words)))
