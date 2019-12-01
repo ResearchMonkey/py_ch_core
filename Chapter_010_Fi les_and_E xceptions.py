@@ -68,15 +68,27 @@ my_dir = os.getcwd()
 #     else:
 #         print(answer)
 
-filename = '{}/python_crash_course_files/chapter_10/alice.txt'.format(my_dir)
+# file_dir = f'{my_dir}/python_crash_course_files/chapter_10'
+#
+# filename = f'{file_dir}/alice.txt'
+# filenames = [f'{file_dir}/alice.txt', f'{file_dir}/siddhartha.txt', f'{file_dir}/moby_dick.txt', f'{file_dir}/little_women.txt']
+#
+# def count_words(filename):
+#     try:
+#         with open(filename, encoding='utf-8') as f_obj:
+#             contents = f_obj.read()
+#     except FileNotFoundError:
+#         # print(f'Sorry, the file {filename} does not exist.')
+#         pass
+#     else:
+#         # Count the approximate number of words in the file.
+#         words = contents.split()
+#         num_words = len(words)
+#         print(' The file {} has about {} words'.format(filename, str(num_words)))
+#
+# count_words(f'{my_dir}/python_crash_course_files/chapter_10/alice.txt')
+#
+# for files in filenames:
+#     count_words(files)
 
-try:
-    with open(filename, encoding='utf-8') as f_obj:
-        contents = f_obj.read()
-except FileNotFoundError:
-    print(f'Sorry, the file {filename} does not exist.')
-else:
-    # Count the approximate number of words in the file.
-    words = contents.split()
-    num_words = len(words)
-    print(' The file {} has about {} words'.format(filename, str(num_words)))
+""""Storing Data page 208"""
