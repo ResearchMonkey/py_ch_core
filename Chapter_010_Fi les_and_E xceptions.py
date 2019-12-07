@@ -113,12 +113,12 @@ filename = 'numbers.json'
 filename = 'username.json'
 
 
-def greet_user():
-    """gets the new users name and checks"""
-    try:
-        username = input("What is your name?")
-        with open(filename) as f_obj:
-    username = json.load(f_obj)
+# def greet_user():
+#     """gets the new users name and checks"""
+#     try:
+#         username = input("What is your name?")
+#         with open(filename) as f_obj:
+#             username = json.load(f_obj)
 
 try:
     with open(filename) as f_obj:
