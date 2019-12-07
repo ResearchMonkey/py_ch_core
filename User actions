@@ -1,0 +1,44 @@
+
+list of actions to stack to create courses of fire steps
+
+Draw from concealment
+Draw from open
+Draw from retention level x
+
+fire x on target x
+
+select target x
+select target x if y
+
+reload, slide-lock
+reload, tactical
+
+Move x to (location)
+
+Shooting position - standing
+Shooting position - knelling
+Shooting position - prone
+Shooting position - back
+
+Support hand only - fire
+Support hand only - reload
+
+primary hand only - fire
+primary hand only - reload
+
+transitions - primary to support hand
+transitions - support to primary
+transitions - to side arm
+
+clear malfunction
+
+pick up weapon x from (location) "I said weapon x"
+
+
+
+
+"1. Draw from concealment, 2. fire 2 on target 1, 3. reload, slide-lock, 4. fire 4 on target 2"
+1. split = Draw from holster (buzzer to round 1)
+2. spilt = Recoil management (round 1 to round 2)
+3. split = Reloading (Round 2 to round 3)
+4. split = Recoil management (round 3 to round 6)

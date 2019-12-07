@@ -1,0 +1,28 @@
+"FASTest": {
+"rounds": 6,
+"distance": "7 yards",
+"field of fire": "lane",
+"target_type": "square, 3x5, circle 8in",
+"number of target positions": 1,
+"distance between targets": "0,9",
+"starting_position": "holstered",
+"starting conditions": "loaded, chambered Y, 1",
+"reloads": 1,
+"transition": 0,
+"Movement": 0,
+"Judgement": 0,
+"failure simulations": 0,
+"scoring": "no misses",
+"steps": "1. draw from concealment, 2. fire 2 on target 1, 3. slide-lock reload , 4. fire 4 on target 2"
+}
+
+
+User actions for steps and corasponding
+draw from concelment
+fire x on target x (if more than 1 = Recoil management)
+reload, slide-lock
+reload, tactical
+Move x (to optonal)
+Shooting position- standing
+Shooting position- knelling
+Support hand-

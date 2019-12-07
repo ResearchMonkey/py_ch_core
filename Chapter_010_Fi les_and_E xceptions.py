@@ -108,3 +108,25 @@ filename = 'numbers.json'
 # print(numbers)
 
 """Saving and Reading User-Generated Data page 210"""
+
+
+filename = 'username.json'
+
+
+def greet_user():
+    """gets the new users name and checks"""
+    try:
+        username = input("What is your name?")
+        with open(filename) as f_obj:
+    username = json.load(f_obj)
+
+try:
+    with open(filename) as f_obj:
+        username = json.load(f_obj)
+except FileNotFoundError:
+    username = input('What is your name? ')
+    with open(filename, 'w') as f_obj:
+        json.dump(username, f_obj)
+        print(f"We'll remember you when you come back, {username}!")
+else:
+    print(f'Welcome back, {username}!')
