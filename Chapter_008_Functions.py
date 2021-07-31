@@ -72,7 +72,7 @@ def build_person(first_name, last_name, age=''):
     return person
 
 
-musician = build_person('jimi', 'Hindrix', age=22)
+musician = build_person('jimi', 'Hindrix', age = 22)
 
 
 # print(musician)

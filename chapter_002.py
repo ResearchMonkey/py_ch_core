@@ -2,7 +2,6 @@
 # first_name = "ada"
 # last_name = "lovelace"
 # full_name = first_name + " " + last_name
-
 # print(name)
 # print(name.title())
 # print(name.upper())
@@ -14,14 +13,14 @@
 # print(message)
 # Adding white space
 # \t adds
-#print("\tPython")
+# print("\tPython")
 # \n adds new line
-#print("\nSpace")
+# print("\nSpace")
 # adding \n inline adds each entry on a new line
 # print("Lost\nin\nSpace")
 # you can combine for a tab delineated list
 # print("list\n\ttitle method\n\tupper and lower method\n\tconcatination using +")
-fav_lang = 'python '
+# fav_lang = 'python '
 # print(fav_lang)
 # print(fav_lang.rstrip())
 # fav_lang=fav_lang.rstrip()
@@ -54,3 +53,7 @@ fav_lang = 'python '
 # message = "Happy "+ str(age) +"rd Birthday!"
 # print(message)
 # print(this)
+
+name = 'ada lovelace'
+print(name.title())
+print(name.upper())
